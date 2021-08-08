@@ -1,0 +1,549 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+  
+  
+  }
+  .Homepage{
+    height: 215.21vh;
+    width: 100%;
+    /* border: 1px solid red;*/
+     background-color: #FFFFFF;
+  }
+  .header{
+      height: 0.2%;
+  }
+  nav{
+    display: flex;
+    padding: 1% 4%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav img{
+    width: 38.85vh;
+    height: 14.09vh;
+    margin-left: 20vw;
+    top: 2.59vh;
+    
+  
+  }
+  .nav-links{
+    text-align: left;
+    flex: 1;
+    vertical-align: middle;
+   
+  }
+  
+  
+  .nav-links ul li {
+    list-style: none;
+    display: inline-block;
+   padding:8px 45px ;
+   position: relative;
+  
+  }
+  .nav-links a{
+     text-decoration: none;
+  font-size:24px;
+  color:#083E6F;
+  }
+  
+  
+  
+  
+  .nav-links li::after{
+    content: '';
+    width: 0vh;
+    height: 10px;
+    background: #1BA7E4;
+    display: block;
+    margin: auto;
+    transition: 0.2s;
+  }
+  
+  .nav-links  li:hover::after{
+    width: 8vh;
+    height: 0.5vh;
+    border-bottom-right-radius: 80%;
+   
+  }
+  .dropdown {
+    float: right;
+    overflow: hidden;
+  
+  
+  }
+  .dropdown .dropbtn {
+    font-size: 24px;
+    border: none;
+    outline: none;
+    color:#083E6F;
+    padding: 8px 12px;
+    background-color: inherit;
+    font-family: Roboto;
+    margin: 0;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 21.89vh;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: 3px solid #f1f1f1;
+  right: 40px;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .form {
+    max-width: 300px;
+    padding: 20px;
+    background-color: white;
+    font-family: Roboto;
+  font-size: 18px;
+  }
+  .form h1{
+    font-size: 24px;
+  }
+  .form input[type=text], .form input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 15px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  .form input[type=text]:focus, .form input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  /* Set a style for the login button */
+  .form .btn {
+    background-color: #083E6F;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+    margin-top: 6px;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form .btn:hover {
+    opacity: 1;
+  }
+  .form a{
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Roboto;
+    margin-left: 130px;
+    color: #1BA7E4;
+  }
+  
+/*Sign Up*/
+input[type=text], input[type=password] {
+  width: 70%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background:white;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+button {
+  background-color: #083E6F;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+
+
+.signupbtn {
+  float: center;
+  width: 30%;
+  margin-left: 30px;
+}
+.modal {
+  display: none;
+  position: fixed; 
+  z-index: 1; 
+  left: 20%;
+  top: 25%;
+  width: 70%; 
+  height: 70%; 
+  overflow: auto; 
+  padding-top: 0px;
+  background-color: white;
+  color:#3f3b3b;
+}
+.modal-content  {
+  display:flex;
+  display:inline-block;
+  position:absolute;
+}
+
+.ho{
+  width:35%;
+  height:670px;;
+  position:absolute;
+  background-color: #1BA7E4;
+  align-items:left;
+  align-content: left;
+  flex:1;
+  color:white;
+  font-size: 40px;
+  text-align: center;
+}
+.ho img{
+  margin-left:-150px;
+  top:500px;
+  position:absolute;
+}
+.container{
+  background-color: #fefefe;
+  display:inline-block;
+  margin-left:380px;
+  position:absolute;
+}
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+ 
+ 
+  /*Payment Section*/
+
+  
+
+.payment{
+    height: 73%;
+
+}
+.stepbar{
+    margin: 20vh auto;
+    font-family: Roboto;
+
+font-size: 24px;
+color: #083E6F;
+
+
+}
+.stepbar ul{
+    text-align: center;
+}
+.stepbar ul li{
+    display: inline-block;
+    width:50vh ;
+    position: relative;
+}
+ .stepbar ul li .fa{
+background: #1BA7E4;;
+width: 11.9vh;
+height: 11.9vh;
+border-radius: 50%;
+padding: 2.736vh;
+}
+.stepbar ul li .fa::after{
+    content: '';
+    background: #1BA7E4;
+    height: 0.6839vh;
+    width:  53.35vh;
+    display: block;
+    left: 0;
+    margin-top:-2.736vh;
+   z-index: -1;
+}
+.stepbar ul li:nth-child(3) .fa{
+    background:  #C4C4C4;;
+    color: rgba(255, 191, 28, 0.86);
+}
+.stepbar ul li:last-child .fa::after{
+    width:0vh;
+}
+
+.paymentdetails{
+  margin: 20vh auto;
+  width: 125vh;
+  justify-content: center;
+ 
+  height: 75.33vh;
+  color: #083E6F;
+}
+
+ .paymentdetails .paymentbox{
+   height: 15%;
+   background: #C4C4C4;
+ }
+ .paymentdetails .cardinfo{
+   height: 91%;
+   background: rgba(196, 196, 196, 0.37);
+ }
+  .paymentbox p{
+      margin-left:2%;
+      padding-top: 2.5%;
+      font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  }
+ 
+  .cardinfo h2{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    padding: 2vh;
+    margin-left: 0.9% ; 
+    color: #083E6F;
+    margin-top:2%;
+    
+  }
+ 
+
+  .firstrow{
+      display: flex;
+      margin-top:0%;
+  }
+  .card_num{
+    width: 50%;
+    margin-right: 2%;
+    margin-left: 7.6%;
+}
+.card_num h3{
+    margin-bottom: 2%;
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 28px;
+
+color: #083E6F
+}
+.cvv h3{
+    margin-bottom:2%;
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 28px;
+
+color: #083E6F
+}
+
+.input_field  input{
+    width: 100%;
+    padding: 1.5vh;
+    border: none;
+    outline: none;
+    background:  #C4C4C4;
+
+  }
+  
+
+  .ExpiryDate{
+    display: flex;
+      margin-top: 0.9%;
+      margin-right: 5%;
+      margin-left: 9.6%;
+  }
+  .ExpiryDate h2{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    padding: 2vh;
+    color: #083E6F;
+    margin-top: 2.6%;
+    
+  }
+.input_field1{
+    margin-top: 3.6%;
+    margin-left: 6.3%;
+    
+}
+.input_field1  input{
+   width: 100%;
+    padding: 1.5vh;
+    border: none;
+    outline: none;
+   background:  #C4C4C4;
+  }
+  .payandbtn{
+    margin:3% auto;
+    justify-content: center;
+    width:64.48vh;
+    }
+  .payable{
+   
+    
+    height:  16.415vh;
+  margin-bottom: 3%;
+    background: #C4C4C4;
+    font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 26px;
+line-height: 35px;
+text-align: center;
+
+color: #083E6F;
+  }
+  
+  .icon-container {
+   margin-bottom: 2%;
+    font-size: 30px;
+vertical-align: center;
+    text-align: center;
+  }
+  
+.btn1 {
+
+    color: white;
+    padding: 20px;
+   margin-bottom: 9%;
+    border: none;
+    
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+    width: 100%;
+    height: 8.2vh;
+background: #1BA7E4;
+  }
+  
+  .btn1:hover {
+    background-color: #137ebd;
+  }
+  
+  
+  /*Footer*/
+
+
+  .footer{
+  height:24.44%;
+  /*  border: 1px solid red;*/
+  background-color: #343F48;
+  color: #FFFFFF;
+  
+  }
+  .footer .footer-content{
+  display: flex;
+  height: 60%;
+  }
+  .footer .footer-content .footer-section{
+  flex: 1;
+  
+  
+  }
+  .footer .footer-content h2{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 110%;
+  line-height: 20%;
+  color: #1BA7E4;
+  margin-left: 37%;
+  margin-right: 30%;
+  margin-top: 3%; 
+  text-align: left;
+  margin-bottom: 1%;
+  
+  }
+  .footer .footer-content .Contactus .social img{
+  margin-left:2.5%;
+  margin-top: 23%;
+  position: relative;
+  left: 31%;
+  }
+  .footer .footer-content .Contactus .social img:hover {
+  color: white;
+  margin-left: 5%;
+  transition: all .3s;
+  }
+  .footer .footer-content .Contactus .logo img{
+  position: absolute;
+  width: 20%;
+  height: 17%;
+  margin-top: 2%;
+  margin-left: 15%;
+  }
+  
+  .footer .footer-content .Quicklinks ul{
+  text-align:left;
+  flex:1;
+  
+  }
+  
+  .footer .footer-content .Quicklinks ul a {
+  display: block;
+  font-family: Roboto;
+  transition: all .3s;
+  color:white;
+  font-size:95%;
+  padding-left: 37%;
+  text-decoration: none;
+  margin-bottom: 1.5%;
+  }
+  .footer .footer-content .Quicklinks ul a:hover {
+  color: white;
+  margin-left: 1%;
+  transition: all .3s;
+  }
+  
+  
+  
+  .footer .footer-bottom{
+  text-align:left;
+  flex:1;
+  font-style:normal;
+  font-family: Roboto;
+  font-size:75%;
+  color:white;
+  text-align:left;
+  list-style: none;
+  height: 3%;
+  padding-top: 6%;
+  }
+  .footer .footer-bottom li{
+  list-style:none;
+  display:inline-block;
+  padding-left: 18.5%;
+  padding-right: 13.5%;
+  position:relative;
+  }
+  
